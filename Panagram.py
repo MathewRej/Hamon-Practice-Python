@@ -1,5 +1,4 @@
-def panagram():
-    s = input("Enter a sentence:")
+def panagram(s):
     characters = list("abcdefghijklmnopqrstuvwxyz ")
     for char in characters:
         if char in s:
@@ -7,7 +6,8 @@ def panagram():
         else:
             return False
     return True
-print(panagram())
+s = input("Enter a sentence:")
+print(panagram(s))
 
    
 
