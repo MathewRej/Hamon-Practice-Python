@@ -1,13 +1,10 @@
 def panagram(s):
-    characters = list("abcdefghijklmnopqrstuvwxyz ")
+    characters = list("abcdefghijklmnopqrstuvwxyz")
     for char in characters:
-        if char in s:
-            continue
-        else:
+        if char not in s:
             return False
     return True
-s = input("Enter a sentence:")
-print(panagram(s))
+print(panagram("the quick brown fox jumps over the lazy dog"))
 
    
 
